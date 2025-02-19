@@ -12,6 +12,8 @@ import java.util.List;
 @RequestMapping(value = "/events")
 public class EventController {
 
+    //Add authentication to this project
+
     @GetMapping
     public List<Event> getEvents() {
         return Event.findAllItems();
